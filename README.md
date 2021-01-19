@@ -1,21 +1,43 @@
-![Angular Logo](https://github.com/vercel/vercel/blob/master/packages/frameworks/logos/angular.svg)
+# Reponses au TD
 
-# Angular Example
+3. npm i -g vercel
 
-This directory is a brief example of an [Angular](https://angular.io/) app that can be deployed with Vercel and zero configuration.
+4. vercel -v 
+donne = 21.1.0
 
-## Deploy Your Own
+5. vercel init
 
-Deploy your own Angular project with Vercel.
+6. vercel
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/vercel/vercel/tree/master/examples/angular)
+7. vercel list
+ou vercel ls
 
-_Live Example: https://angular.now-examples.now.sh_
+8. vercel logs https://td-vercel-one.vercel.app
 
-### How We Created This Example
+9. vercel inspect [unique-deployment-url]
+elle sert à récupérer les informations concernent le déploiement spécifié.
 
-To get started with Angular, you can use the [Angular CLI](https://cli.angular.io/) to initialize the project:
+10. Les variables d'environnement permetent d'injecter des valeurs qu'on ne veut pas placer directement dans le code source.
 
-```shell
-$ ng new
-```
+11. vercel env add plain [name] production
+
+12. vercel env ls
+
+13. Les variable d'environnement secrets sont cryptés et sont utilisées pour les informations sensibles comme les mots de passe ou les jetons d'accès.
+
+15. vercel secrets add [secret-name] [secret-value]
+puis
+vercel env add secret [secret-name] [environment]
+et dans la valeur on renseigne le nom du secret.
+
+16. Production, Preview, et Development.
+
+18. vercel-sand-mu.vercel.app
+
+19. Le pull request sert à demander au détenteur du dépôt un merge entre les modification de notre branche et le master. Vercel va déployer les modifictions du pull request dans le preview pour que les tests soient effectués.
+
+20. Vercel passe le déployement en production.
+
+21. L'environnement production correspond à la branche master.
+
+22. 
